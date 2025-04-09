@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow-x: auto;
+}
+
+/* Heading */
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+thead tr th {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr {
+    background-color: white;
+    transition: 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #e2e6ea;
+}
+
+/* Table Cells */
+td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Download Button */
+.download-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
+
+/* Status */
+td:last-child {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 15px;
+        overflow-x: auto;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+
+    td, th {
+        padding: 8px;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <h2>View All Notes</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S. No</th>
+                    <th>Uploaded By</th>
+                    <th>Uploading Date</th>
+                    <th>Branch</th>
+                    <th>Subject</th>
+                    <th>Download</th>
+                    <th>File Type</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mekala Srujana</td>
+                    <td>2025-03-05</td>
+                    <td>computer science</td>
+                    <td>Operating system</td>
+                    <td><a href="OS unit 2" class="download-btn">Download</a></td>
+                    <td>PDF</td>
+                    <td>Human Computer Interaction 5th Semester Notes</td>
+                    <td>Accept</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>rahulnarode58@gmail.com</td>
+                    <td>2023-02-27</td>
+                    <td>Computer Science</td>
+                    <td>Software Engineering</td>
+                    <td><a href="#" class="download-btn">Download</a></td>
+                    <td>DOC/DOCX</td>
+                    <td>Software Engineering Notes</td>
+                    <td>Accept</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>rahulnarode58@gmail.com</td>
+                    <td>2023-02-27</td>
+                    <td>Computer Science</td>
+                    <td>Database Management System</td>
+                    <td><a href="#" class="download-btn">Download</a></td>
+                    <td>PPT</td>
+                    <td>DBMS Notes</td>
+                    <td>Accept</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
